@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseSequence", "ReverseS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperRegisterCountries", "UperRegisterCountries\UpperRegisterCountries.csproj", "{71FAC670-D546-4216-A6AD-086808F465EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareDigit", "SquareDigit\SquareDigit.csproj", "{0122F001-771F-4354-849D-75A3FEC544E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{71FAC670-D546-4216-A6AD-086808F465EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71FAC670-D546-4216-A6AD-086808F465EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71FAC670-D546-4216-A6AD-086808F465EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0122F001-771F-4354-849D-75A3FEC544E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0122F001-771F-4354-849D-75A3FEC544E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0122F001-771F-4354-849D-75A3FEC544E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0122F001-771F-4354-849D-75A3FEC544E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
