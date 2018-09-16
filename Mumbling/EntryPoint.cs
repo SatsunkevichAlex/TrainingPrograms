@@ -7,11 +7,7 @@ namespace Mumbling
     {
         static void Main(string[] args)
         {
-            //char y = 'b';
-            //int x = (int)y;
-            //Console.WriteLine(x);
-
-            Console.WriteLine(Accum("123"));
+            Console.WriteLine(Accum("a123"));
         }
 
         public static string Accum(string sequance)
@@ -20,8 +16,9 @@ namespace Mumbling
 
             for (int i = 0; i < sequance.Length; i++)
             {
+                resultSequance.Append(sequance[i].ToString().ToUpper());
 
-                for (int j = 0; j <= i; j++)
+                for (int j = 1; j <= i; j++)
                 {
                     resultSequance.Append(sequance[i]);
                 }
@@ -29,7 +26,9 @@ namespace Mumbling
                 resultSequance.Append("-");
             }
 
-            return resultSequance.R.ToString();
+            return RemoveLastCharacterInString(resultSequance.ToString());
         }
+
+        public static string RemoveLastCharacterInString(string word) => word.ToString().Remove(word.Length - 1);
     }
 }
