@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperRegisterCountries", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareDigit", "SquareDigit\SquareDigit.csproj", "{0122F001-771F-4354-849D-75A3FEC544E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mumbling", "Mumbling\Mumbling.csproj", "{9C449FEF-7550-42CD-9ED2-0827704D58BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{0122F001-771F-4354-849D-75A3FEC544E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0122F001-771F-4354-849D-75A3FEC544E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0122F001-771F-4354-849D-75A3FEC544E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C449FEF-7550-42CD-9ED2-0827704D58BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C449FEF-7550-42CD-9ED2-0827704D58BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C449FEF-7550-42CD-9ED2-0827704D58BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C449FEF-7550-42CD-9ED2-0827704D58BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
