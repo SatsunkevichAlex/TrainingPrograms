@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Linq;
 
 namespace Mumbling
 {
@@ -7,13 +8,24 @@ namespace Mumbling
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Accum("a123"));
+            Console.WriteLine(Accum("abCdefG"));
         }
 
         public static string Accum(string sequance)
         {
-            StringBuilder resultSequance = new StringBuilder("");
+            sequance = sequance.ToLower();
 
+            try
+            {
+                if (!IsAllCharactersInSequanceLatters(sequance))
+                    throw new Exception("Invalid input");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message + " !");
+            }
+
+            StringBuilder resultSequance = new StringBuilder("");
             for (int i = 0; i < sequance.Length; i++)
             {
                 resultSequance.Append(sequance[i].ToString().ToUpper());
@@ -29,6 +41,14 @@ namespace Mumbling
             return RemoveLastCharacterInString(resultSequance.ToString());
         }
 
+        //Need this method becouse result string ends with '-' but should not.
         public static string RemoveLastCharacterInString(string word) => word.ToString().Remove(word.Length - 1);
+
+        public static bool IsAllCharactersInSequanceLatters(string sequance)
+        {
+            const string Alpabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+
+            return sequance.ToCharArray().All(c => Alpabet.Contains(c));
+        }
     }
 }
