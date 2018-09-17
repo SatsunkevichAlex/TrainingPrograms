@@ -11,18 +11,33 @@ namespace SumOfTwoLowestPositiveIntegers
     {
         static void Main(string[] args)
         {
-            int[] x = { 2, 3, 5 };
+            int[] x = { 2, 3, 5, 3, 4, 6, 7, 2, 1, 0};
+            Console.WriteLine(SumTwoSmallestNumbers(x));
         }
 
         public static int SumTwoSmallestNumbers(int[] numbers)
         {
-            if (numbers.Length < 4
-            || numbers == null)
+            try
             {
-                throw new Exception("Invalid input");
+                if (numbers.Length < 4
+                || numbers == null
+                || numbers.Any(i => i < 0))
+                {
+                    throw new Exception("Invalid input");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
             }
 
-            return 0;
+            var sortedNumbers = numbers.OrderBy(i => i).ToArray();
+            int sum = 0;
+            for (int i = 0; i < 2; i++)
+            {
+                sum += sortedNumbers[i];
+            }
+            return sum;
         }
     }
 }
