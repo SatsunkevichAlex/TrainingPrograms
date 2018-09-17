@@ -19,7 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperRegisterCountries", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareDigit", "SquareDigit\SquareDigit.csproj", "{0122F001-771F-4354-849D-75A3FEC544E3}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfTwoLowestPositiveIntegers", "SumOfTwoLowestPositiveIntegers\SumOfTwoLowestPositiveIntegers.csproj", "{F2960934-758D-4B67-BACC-C44C69506D34}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mumbling", "Mumbling\Mumbling.csproj", "{9C449FEF-7550-42CD-9ED2-0827704D58BD}"
+>>>>>>> 0dd13ac8c3bac550b1cda3bb161f1b784c23afba
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +63,17 @@ Global
 		{0122F001-771F-4354-849D-75A3FEC544E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0122F001-771F-4354-849D-75A3FEC544E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0122F001-771F-4354-849D-75A3FEC544E3}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{F2960934-758D-4B67-BACC-C44C69506D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2960934-758D-4B67-BACC-C44C69506D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2960934-758D-4B67-BACC-C44C69506D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2960934-758D-4B67-BACC-C44C69506D34}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{9C449FEF-7550-42CD-9ED2-0827704D58BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C449FEF-7550-42CD-9ED2-0827704D58BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C449FEF-7550-42CD-9ED2-0827704D58BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C449FEF-7550-42CD-9ED2-0827704D58BD}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 0dd13ac8c3bac550b1cda3bb161f1b784c23afba
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

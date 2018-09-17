@@ -13,17 +13,16 @@ namespace SumOfTwoLowestPositiveIntegers
         {
             int[] x = { 2, 3, 5 };
         }
-    }
 
-    public static int SumTwoSmallestNumbers(int[] numbers)
-    {
-        if (numbers.Length < 4
-        || numbers == null)
+        public static int SumTwoSmallestNumbers(int[] numbers)
         {
-            throw new Exception("Invalid input");
-        }
-        var result = numbers.OrderBy();
+            if (numbers.Length < 4
+            || numbers == null)
+            {
+                throw new Exception("Invalid input");
+            }
 
-        return 0;
+            return 0;
+        }
     }
 }
