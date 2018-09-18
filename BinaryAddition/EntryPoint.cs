@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Implement a function that adds two numbers together and returns their sum in binary.The conversion can be done before, or after the addition.
+//The binary number returned should be a string.
+
+using System;
 
 namespace BinaryAddition
 {
@@ -11,20 +14,7 @@ namespace BinaryAddition
 
         private static string BinaryAddition(int a, int b)
         {
-            //string aInString = Convert.ToString(a, 2);
-            //string bInString = Convert.ToString(b, 2);
-
-            //a = Convert.ToInt16(aInString);
-            //b = Convert.ToInt16(bInString);
-
-            //int[] array = { a, b };
-            //string result = "";
-            //for (int i = 0; i < array.Length; i++)
-            //{
-            //    result += array[i].ToString();
-            //}
-
-            return Convert.ToString(a + b, 2);
+            return Convert.ToString(a + b);
         }
     }
 }

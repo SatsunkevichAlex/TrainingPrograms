@@ -8,11 +8,7 @@ namespace Mumbling
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-            Console.WriteLine(Accum(""));
-=======
             Console.WriteLine(Accum("abCdefG"));
->>>>>>> e5b0f42c6e64f6851522876b2a7f4332eec0b785
         }
 
         public static string Accum(string sequance)
