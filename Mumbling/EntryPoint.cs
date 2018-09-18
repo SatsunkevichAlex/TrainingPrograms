@@ -7,7 +7,7 @@ namespace Mumbling
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Accum("a123"));
+            Console.WriteLine(Accum(""));
         }
 
         public static string Accum(string sequance)
