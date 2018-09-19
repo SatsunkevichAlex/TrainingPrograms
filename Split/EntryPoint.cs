@@ -21,10 +21,12 @@ namespace TrainingPrograms
             string[] countriesArray = countries.Split(new Char[] {' ', ','});
             string longestNameCountry = null;
             List<int> countriesLengths = new List<int>();
+
             foreach (string country in countriesArray)
             {
                 countriesLengths.Add(country.Length);
             }
+
             foreach (string country in countriesArray)
             {
                 if (country.Length == countriesLengths.Max())
@@ -32,6 +34,7 @@ namespace TrainingPrograms
                     longestNameCountry = country;
                 }
             }
+
             return longestNameCountry;
         }
     }
