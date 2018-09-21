@@ -1,23 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 
-class EntryPoint
+namespace YourOrderPlease
 {
-    static void Main()
+    class Program
     {
-        string str = "Te4st is2 Thi1s 3a";
-        Console.WriteLine(Order(str));
-    }
-
-    public static string Order(string str)
-    {
-        //var a = str.Split(' ').Select(t => (int)(t.First(x => Char.IsNumber(x))) - 48).ToArray();
-        string ans = "";
-        foreach (int index in str.Split(' ').Select(t => (int)(t.First(x => Char.IsNumber(x))) - 48))
+        static void Main()
         {
-            ans += (str.Split(' ')[index - 1]) + " ";
+            string str = "Te4st 3a Thi1s is2 5made b7y Ant5on";
+            Console.WriteLine(Order(str));
         }
-        return ans;
+
+        public static string Order(string str)
+        {
+            int[] numr = str.Split(' ').Select(t => (int)(t.First(x => Char.IsNumber(x))) - 49).ToArray();
+            string[] arr = new string[numr.Length];
+            int i = 0;
+            foreach (string str1 in str.Split(' '))
+            {
+                arr[numr[i]] = str1 + " ";
+                i++;
+            }
+            arr.Take(arr.Length - 1);
+            str = string.Empty;
+            foreach (string str1 in arr)
+            {
+                str += str1;
+            }
+            return str;
+        }
     }
 }
