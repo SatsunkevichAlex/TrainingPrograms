@@ -1,4 +1,9 @@
-﻿using System;
+﻿//Your task is to sort a given string. Each word in the String will contain a single number.This number is the position the word should have in the result.
+//Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+//If the input String is empty, return an empty String.The words in the input String will only contain valid consecutive numbers.
+//For an input: "is2 Thi1s T4est 3a" the function should return "Thi1s is2 3a T4est"
+
+using System;
 using System.Linq;
 
 namespace YourOrderPlease
@@ -7,27 +12,35 @@ namespace YourOrderPlease
     {
         static void Main()
         {
-            string str = "Te4st 3a Thi1s is2 5made b7y Ant5on";
-            Console.WriteLine(Order(str));
+            string words = "Thi1s is2 3a T4est";
+            Console.WriteLine("actual : " + Order(words).Length);
+            Console.WriteLine("expected : " + words.Length);
+            Console.WriteLine(Order(words));
         }
 
-        public static string Order(string str)
+        public static string Order(string words)
         {
-            int[] numr = str.Split(' ').Select(t => (int)(t.First(x => Char.IsNumber(x))) - 49).ToArray();
-            string[] arr = new string[numr.Length];
+            int[] numersOfWords = words.Split(' ').Select(t => t.First(x => Char.IsNumber(x)) - 49).ToArray();
+            string[] arrayOfWords = new string[numersOfWords.Length];
             int i = 0;
-            foreach (string str1 in str.Split(' '))
+            foreach (string word in words.Split(' '))
             {
-                arr[numr[i]] = str1 + " ";
+                if (i < words.Split(' ').Length - 1)
+                {
+                    arrayOfWords[numersOfWords[i]] = word + " ";
+                }
+                else
+                {
+                    arrayOfWords[numersOfWords[i]] = word;
+                }
                 i++;
             }
-            arr.Take(arr.Length - 1);
-            str = string.Empty;
-            foreach (string str1 in arr)
+            words = string.Empty;
+            foreach (string str1 in arrayOfWords)
             {
-                str += str1;
+                words += str1;
             }
-            return str;
+            return words;
         }
     }
 }
