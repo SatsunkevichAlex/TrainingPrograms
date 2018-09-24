@@ -12,10 +12,11 @@ namespace YourOrderPlease
     {
         static void Main()
         {
-            string words = "Thi1s is2 3a T4est";
+            string words = "Thi1s is2 3a T4est 5lst";
             Console.WriteLine("actual : " + Order(words).Length);
             Console.WriteLine("expected : " + words.Length);
             Console.WriteLine(Order(words));
+            words.ToCharArray();
         }
 
         public static string Order(string words)
@@ -25,14 +26,7 @@ namespace YourOrderPlease
             int i = 0;
             foreach (string word in words.Split(' '))
             {
-                if (i < words.Split(' ').Length - 1)
-                {
-                    arrayOfWords[numersOfWords[i]] = word + " ";
-                }
-                else
-                {
-                    arrayOfWords[numersOfWords[i]] = word;
-                }
+                arrayOfWords[numersOfWords[i]] = word + " ";
                 i++;
             }
             words = string.Empty;
@@ -40,7 +34,7 @@ namespace YourOrderPlease
             {
                 words += str1;
             }
-            return words;
+            return words.Remove(words.Length - 1, 1);
         }
     }
 }
