@@ -10,6 +10,7 @@ namespace ReverseSequenceWithTrim
         static void Main(string[] args)
         {
             Console.WriteLine(ReverseLetter("qwert123"));
+
         }
 
         public static string ReverseLetter(string str)

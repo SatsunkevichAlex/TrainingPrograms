@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportationOnVocation", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseSequenceWithTrim", "ReverseSequenceWithTrim\ReverseSequenceWithTrim.csproj", "{DFCB7E4F-C5CF-4238-8074-5B233ABC28AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveAllMarkedElementsOfTheList", "RemoveAllMarkedElementsOfTheList\RemoveAllMarkedElementsOfTheList.csproj", "{238BF5B1-1AFF-401A-A875-783BA0F29B27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{DFCB7E4F-C5CF-4238-8074-5B233ABC28AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFCB7E4F-C5CF-4238-8074-5B233ABC28AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFCB7E4F-C5CF-4238-8074-5B233ABC28AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238BF5B1-1AFF-401A-A875-783BA0F29B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238BF5B1-1AFF-401A-A875-783BA0F29B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238BF5B1-1AFF-401A-A875-783BA0F29B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238BF5B1-1AFF-401A-A875-783BA0F29B27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
